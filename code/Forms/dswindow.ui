@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DSWindow</class>
+ <widget class="QMainWindow" name="DSWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+    <pointsize>10</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>综合题</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/images/DSICO.png</normaloff>:/images/images/DSICO.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>361</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTreeView" name="treeView">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>361</width>
+      <height>411</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxInfor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>121</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>基本信息</string>
+    </property>
+    <widget class="QLabel" name="label_1">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>23</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>·表数据数：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>41</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>·树结点数：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>59</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>·能否转化：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTableNum">
+     <property name="geometry">
+      <rect>
+       <x>76</x>
+       <y>23</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTreeNum">
+     <property name="geometry">
+      <rect>
+       <x>76</x>
+       <y>41</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelTrans">
+     <property name="geometry">
+      <rect>
+       <x>76</x>
+       <y>59</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>不能</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBoxTree">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>221</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>树结构选项</string>
+    </property>
+    <widget class="QPushButton" name="btnShow">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>26</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>展  开</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnClose">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>52</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>收  起</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioCL">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>26</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>孩子表示法</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioCS">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>52</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>9</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>孩子兄弟表示法</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actTableInsert"/>
+   <addaction name="actTableUpdate"/>
+   <addaction name="actTableDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actToTree"/>
+   <addaction name="separator"/>
+   <addaction name="actTreeInsert"/>
+   <addaction name="actTreeUpdate"/>
+   <addaction name="actTreeDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actHelp"/>
+   <addaction name="actBack"/>
+  </widget>
+  <action name="actTableInsert">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/LineInsert.png</normaloff>:/images/images/LineInsert.png</iconset>
+   </property>
+   <property name="text">
+    <string>表插入</string>
+   </property>
+   <property name="toolTip">
+    <string>插入数据(线性表)</string>
+   </property>
+  </action>
+  <action name="actTableUpdate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/LineUpdate.png</normaloff>:/images/images/LineUpdate.png</iconset>
+   </property>
+   <property name="text">
+    <string>表修改</string>
+   </property>
+   <property name="toolTip">
+    <string>修改数据(线性表)</string>
+   </property>
+  </action>
+  <action name="actTableDelete">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/LineDelete.png</normaloff>:/images/images/LineDelete.png</iconset>
+   </property>
+   <property name="text">
+    <string>表删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除数据(线性表)</string>
+   </property>
+  </action>
+  <action name="actTreeInsert">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/TreeInsert.png</normaloff>:/images/images/TreeInsert.png</iconset>
+   </property>
+   <property name="text">
+    <string>树插入</string>
+   </property>
+   <property name="toolTip">
+    <string>插入结点(树结构)</string>
+   </property>
+  </action>
+  <action name="actTreeDelete">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/TreeDelete.png</normaloff>:/images/images/TreeDelete.png</iconset>
+   </property>
+   <property name="text">
+    <string>树删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除结点(树结构)</string>
+   </property>
+  </action>
+  <action name="actTreeUpdate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/TreeUpdate.png</normaloff>:/images/images/TreeUpdate.png</iconset>
+   </property>
+   <property name="text">
+    <string>树修改</string>
+   </property>
+   <property name="toolTip">
+    <string>修改结点(树结构)</string>
+   </property>
+  </action>
+  <action name="actToTree">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/Trans.png</normaloff>:/images/images/Trans.png</iconset>
+   </property>
+   <property name="text">
+    <string>表转化树</string>
+   </property>
+   <property name="toolTip">
+    <string>线性表转化树结构</string>
+   </property>
+  </action>
+  <action name="actHelp">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/HelpTool.png</normaloff>:/images/images/HelpTool.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助</string>
+   </property>
+   <property name="toolTip">
+    <string>获取帮助</string>
+   </property>
+  </action>
+  <action name="actBack">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/Return.png</normaloff>:/images/images/Return.png</iconset>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="toolTip">
+    <string>返回主界面</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

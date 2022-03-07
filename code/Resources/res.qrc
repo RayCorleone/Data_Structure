@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/icon.ico</file>
+        <file>images/BTreeTool.png</file>
+        <file>images/DSTool.png</file>
+        <file>images/HelpTool.png</file>
+        <file>images/BTreeICO.png</file>
+        <file>images/DSICO.png</file>
+        <file>images/HelpICO.png</file>
+        <file>images/Leaf.png</file>
+        <file>images/Node.png</file>
+        <file>images/Root.png</file>
+        <file>images/Child.png</file>
+        <file>images/Father.png</file>
+        <file>images/Sibling.png</file>
+        <file>images/LineUpdate.png</file>
+        <file>images/LineDelete.png</file>
+        <file>images/LineInsert.png</file>
+        <file>images/Trans.png</file>
+        <file>images/TreeDelete.png</file>
+        <file>images/TreeInsert.png</file>
+        <file>images/TreeUpdate.png</file>
+        <file>images/Return.png</file>
+        <file>images/BTreeLeaf.png</file>
+        <file>images/Fail.png</file>
+        <file>images/KeyNode.png</file>
+    </qresource>
+</RCC>
